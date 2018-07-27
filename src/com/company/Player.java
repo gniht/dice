@@ -10,5 +10,21 @@ public class Player {
     this.score = 0;
   }
 
+  private int getScore(){
+    return this.score;
+  }
+
+  private void incScore(){
+    this.score++;
+  }
+  private void incScore(int amountIncreased){
+    this.score += amountIncreased;
+  }
+
+  @Override
+  public String toString(){
+    return "Name: " + this.name + " Score: " + this.score;
+  }
+
 
 }
