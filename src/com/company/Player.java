@@ -10,20 +10,20 @@ public class Player {
     this.score = 0;
   }
 
-  private int getScore(){
+  int getScore(){
     return this.score;
   }
 
-  private void incScore(){
+  void incScore(){
     this.score++;
   }
-  private void incScore(int amountIncreased){
+  void incScore(int amountIncreased){
     this.score += amountIncreased;
   }
 
   @Override
   public String toString(){
-    return "Name: " + this.name + " Score: " + this.score;
+    return "Player Name: " + this.name + " - - - Total Score: " + this.score;
   }
 
 
